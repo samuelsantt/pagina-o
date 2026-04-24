@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Paginação</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background-color: #f9f9f9;
+        }
+
+        
+        .paginacao {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            border-radius: 4px;
+            overflow: hidden; 
+        }
+
+      
+        .paginacao li {
+            background-color: #fff;
+        }
+
+       
+        .paginacao li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #777676;
+            border: 1px solid #dee2e6;
+            transition: background-color 0.2s ease;
+        }
+
+       
+        .paginacao li + li a {
+            border-left: none;
+        }
+
+        
+        .paginacao li a:hover {
+            background-color: #e9ecef;
+            color: #000000;
+        }
+
+       
+        .seta {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul class="paginacao">
+        <li><a href="#" class="seta">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#" class="seta">&raquo;</a></li>
+    </ul>
+
+</body>
+</html>
